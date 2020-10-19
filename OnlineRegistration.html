@@ -1,0 +1,220 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+		<title> registration page</title>
+		<style>
+			* {    
+				box-sizing: border-box;    
+			}
+			
+			input[type=text], select, textarea {    
+				width: 80%;    
+				padding: 12px;    
+				border: 1px solid rgb(70, 68, 68);    
+				border-radius: 4px;    
+				resize: vertical;    
+			}
+			
+			input[type=submit]{
+				background-color: rgb(37, 116, 161);
+				color: white;
+				padding: 12px 20px;
+				border: none;
+				border-radius:4px;
+				cursor:pointer;
+				float:center;
+			}
+			
+			.container {    
+				border-radius: 5px;    
+				background-color:#f2f2f2; 
+				padding: 20px;   
+				height:100%;
+				width=100%;
+			}
+			
+			.col-25{
+				float:left;
+				width:30%;
+				margin-top:6px;
+			}
+		
+			.col-75{
+				float:left;
+				width:70%;
+				margin-top:6px;
+			}
+			
+			.row:after{
+				content:"";
+				display:"table";
+				clear:"both";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2 style="color:black;text-align:center">DTE First Year Engineering Admission registration 2021</h2>
+				<form style="align:center;">
+					<div class="row">
+						<div class="col-25">
+							<label for="fname" >First Name :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="fname" name="fname" placeholder="Your first name">
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="mname" name="mname">Middle Name :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="mname" name="mname" placeholder="Enter Middle name">
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="lname" >Last Name :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="lname" name="lname" placeholder="Your last name">
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="Pname" name="pmane" >Parent's Name :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="Pname" name="pname" placeholder="Your parent's name" >
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="email" name="email">Email :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="email" name="email" placeholder="abc@gmail.com">
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-25">
+							<label for="mobileno" name="mobileno">Mobile No.:</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="countrycode" name="countrycode" value="+91" size="2" style="width:20%" >
+							<input type="text" id="mobileno" name="mobileno" value="" size="10" style="width:60%" >
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-25">
+							<label for="adhar" name="adhar">ID Aadhar No :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="adhar" name="adhar" value="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="category" name="category">Category</label>
+						</div>
+						<div class="col-75">
+							<input type="radio" id="sc" value="sc">
+							<label for="sc" name="sc">SC</label><br>
+							<input type="radio" id="st" value="st" >
+							<label for="st" name="st">ST</label><br>
+							<input type="radio" id="open" value="open">
+							<label for="open" name="open">Open</label><br>
+							<input type="radio" id="other" value="other">
+							<label for="other" name="other">Other</label>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-25">
+							<label for="state" name="state"> State :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="state" name="state" value="">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-25">
+							<label for="address" name="address"> Address :</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="address" name="address" value="">
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-25">
+							<label for="ssc" name="ssc">SSC</label>
+						</div>
+						<div class="col-75">
+							<table>
+							<tr>
+								<td align="center"><b>Sl.No.</b></td>
+								<td align="center"><b>Examination</b></td>
+								<td align="center"><b>Board</b></td>
+								<td align="center"><b>Percentage</b></td>
+								<td align="center"><b>Year of Passing</b></td>
+								</tr>
+								 
+								<tr>
+								<td>1</td>
+								<td>Class X</td>
+								<td><input type="text" name="ClassX_Board" maxlength="30" /></td>
+								<td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+								<td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+								</tr>
+								 
+								<tr>
+								<td>2</td>
+								<td>Class XII</td>
+								<td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+								<td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+								<td><input type="text" name="ClassXII_YrOfPassing" maxlength="30" /></td>
+								</tr>
+								 
+								<tr>
+								<td>3</td>
+								<td>Graduation</td>
+								<td><input type="text" name="Graduation_Board" maxlength="30" /></td>
+								<td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+								<td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+								</tr>
+								 
+								<tr>
+								<td>4</td>
+								<td>Masters</td>
+								<td><input type="text" name="Masters_Board" maxlength="30" /></td>
+								<td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+								<td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+								</tr>
+								 
+								<tr>
+								<td></td>
+								<td></td>
+								<td align="center">(10 char max)</td>
+								<td align="center">(upto 2 decimal)</td>
+								</tr>
+								</table>
+							</div>
+					</div>
+					<div class="row">
+						<div class="col-25" >
+							<input type="submit" value="submit" style="align:right" onclick="alert('Form successfully submitted...')">
+						</div>
+					</div>
+					
+			</form>
+		</div>
+	</body>
+</html>
