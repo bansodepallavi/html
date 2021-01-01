@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<style >
+		body{
+            background-color: rgb(180, 224, 245);
+            text-align: left;
+		}
+		#header{
+			position: fixed;
+			z-index: 1;
+			height:40px;
+			width: 98%;
+			background-color: #668284;
+			margin-bottom: 10px
+		}
+		#name {
+			float:left;
+			margin-left: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#blog{
+			float:left;
+			margin-left: 450px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#email{
+			float:right;
+			margin-right: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		 
+		<a href="Blog.html" target="_blank"><p id="blog" style="text-align:center">Blog</p></a>
+        
+     </div>
+	 <br><br><hr>
+    <h1 style="text-align: center; color: red; font-size: 50px;">Blog Writing</h1>
+	<hr><hr>
+   
+    <article>
+        <h1 style="text-align: center;">Blockchain</h1>
+        <p>
+            Most Blockchain users already know that a blockchain network is a typical distributed system, which
+			consists of a number of decentralized nodes maintaining a copy of a distributed ledger and executing 
+			smart contracts. The network achieves trust by enabling multiple members to store a copy of the 
+			ledger locally and to only allow updates based on the agreement of the members expressed through
+			the smart contract endorsements and associated policies.</p>
+
+		<p>But where does this trustworthy data come from? What if someone sends malicious transactions to the 
+		blockchain? The answer here is that a practical consensus algorithm will guarantee the data consistency 
+		among different members. One of the widest deployed enterprise blockchain frameworks, Hyperledger Fabric 
+		(the largest open-source enterprise distributed ledger project hosted by the Linux Foundation and adopted
+		by Oracle Blockchain Platform) enforces a policy mechanism, which requires that before a member can send a 
+		transaction to the network, it must collect enough endorsements (implemented as PKI signatures) as defined 
+		by policies agreed with other members sharing the same ledger. And once the transaction is sent to the 
+		network, the ordering service will cut the batch of transactions into blocks and distribute it to the 
+		network nodes. 
+            </p>
+            
+    </article>
+    <br>
+    <br>
+    
+    <footer style="text-align: left;">
+		<address>
+			Author:<br>
+			<b><a href="mailto:BansodePallavi2412@gmail.com">Pallavi Bansode</a></b><br>
+			Walchand College of Engineering,<br>
+			Sangli, Maharashtra, India.
+        </address>
+    </footer>
+    <br>
+    <br>
+</body>

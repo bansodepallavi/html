@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./rating.js"></script>
+	<style >
+		body{
+            background-color: rgb(180, 224, 245);
+            text-align: left;
+		}
+		#header{
+			position: fixed;
+			z-index: 1;
+			height:40px;
+			width: 98%;
+			background-color: #668284;
+			margin-bottom: 10px
+		}
+		#name {
+			float:left;
+			margin-left: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+		.checked {
+			color: orange;
+		}
+		#blog{
+			float:left;
+			margin-left: 450px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#email{
+			float:right;
+			margin-right: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+		
+		<a href="Blog.html" target="_blank"><p id="blog" style="text-align:center">Blog</p></a>
+         
+     </div>
+	 <br><br><hr>
+    <h1 style="text-align: center; color: red; font-size: 50px;">Blog Writing</h1>
+	<hr><hr>
+    <article>
+        <h1 style="text-align: center;">Data Analysis</h1>
+        <p>Data analysis is defined as a process of cleaning, transforming, and modeling data to discover useful information for business decision-making. The purpose of 
+            Data Analysis is to extract useful information from data and taking the decision based upon the data analysis. Whenever we take any decision in our day-to-day 
+            life is by thinking about what happened last time or what will happen by choosing that particular decision. This is nothing but analyzing our past or future 
+            and making decisions based on it. For that, we gather memories of our past or dreams of our future. So that is nothing but data analysis. Now same thing analyst 
+            does for business purposes, is called Data Analysis.</p>
+        <p>
+            Data analysis tools make it easier for users to process and manipulate data, analyze the relationships and correlations between data sets, and it also helps to 
+            identify patterns and trends for interpretation. Here is a complete list of tools.</p>
+        <p>Once the data is collected, cleaned, and processed, it is ready for Analysis. As you manipulate data, you may find you have the exact information you need, or 
+            you might need to collect more data. During this phase, you can use data analysis tools and software which will help you to understand, interpret, and derive 
+            conclusions based on the requirements.</p>
+    </article>
+	<hr>
+    <div class="container">
+	<div class="row" style="margin-top:40px;">
+		<div class="col-md-6">
+    	<div class="well well-sm">
+            <div class="text-right">
+                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+            </div>
+        
+            <div class="row" id="post-review-box" style="display:none;">
+                <div class="col-md-12">
+                    <form accept-charset="UTF-8" action="" method="post">
+                        <input id="ratings-hidden" name="rating" type="hidden"> 
+                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+        
+                        <div class="text-right">
+                            <div class="stars starrr" data-rating="0"></div>
+                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                            <button class="btn btn-success btn-lg" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+         
+		</div>
+	</div>
+</div>
+    <footer style="text-align: left;">
+		<address>
+			Author:<br>
+			<b><a href="mailto:BansodePallavi2412@gmail.com">Pallavi Bansode</a></b><br>
+			Walchand College of Engineering,<br>
+			Sangli, Maharashtra, India.
+        </address>
+    </footer>
+    <br>
+    <br>
+</body>
+</html>

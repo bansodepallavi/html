@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./rating.js"></script>
+	<style >
+		body{
+            background-color: rgb(180, 224, 245);
+            text-align: left;
+		}
+		#header{
+			position: fixed;
+			z-index: 1;
+			height:40px;
+			width: 98%;
+			background-color: #668284;
+			margin-bottom: 10px
+		}
+		.animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #d17581;
+}
+		#name {
+			float:left;
+			margin-left: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#blog{
+			float:left;
+			margin-left: 450px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+		#email{
+			float:right;
+			margin-right: 20px;
+			padding-bottom: 10px;
+			font-size: 16px;
+			font-family: Verdana, sans-serif;
+			color: #ffffff;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="header">
+	
+		<a href="Blog.html" target="_blank"><p id="blog" style="text-align:center">Blog</p></a>
+         
+     </div>
+	 <br><br><hr>
+    <h1 style="text-align: center; color: red; font-size: 50px;">Blog Writing</h1>
+	<hr><hr>
+    
+    <article>
+        <h1 style="text-align: center;">Artificial Intelligence (AI)</h1>
+        <p>
+            Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. 
+            The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving.
+            </p>
+            <p>The ideal characteristic of artificial intelligence is its ability to rationalize and take actions that have the best chance of achieving a specific goal
+            When most people hear the term artificial intelligence, the first thing they usually think of is robots. That's because big-budget films and novels weave 
+            stories about human-like machines that wreak havoc on Earth. But nothing could be further from the truth.
+            Artificial intelligence is based on the principle that human intelligence can be defined in a way that a machine can easily mimic it and execute tasks, 
+            from the most simple to those that are even more complex. The goals of artificial intelligence include learning, reasoning, and perception.
+            As technology advances, previous benchmarks that defined artificial intelligence become outdated. For example, machines that calculate basic functions 
+            or recognize text through optimal character recognition are no longer considered to embody artificial intelligence, since this function is now taken for 
+            granted as an inherent computer function.</p>
+        <p>The applications for artificial intelligence are endless. The technology can be applied to many different sectors and industries. AI is being tested 
+            and used in the healthcare industry for dosing drugs and different treatment in patients, and for surgical procedures in the operating room.Other 
+            examples of machines with artificial intelligence include computers that play chess and self-driving cars. Each of these machines must weigh the 
+            consequences of any action they take, as each action will impact the end result. In chess, the end result is winning the game. For self-driving cars, 
+            the computer system must account for all external data and compute it to act in a way that prevents a collision.</p>
+    </article>
+	
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row" style="margin-top:40px;">
+		<div class="col-md-6">
+    	<div class="well well-sm">
+            <div class="text-right">
+                <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+            </div>
+        
+            <div class="row" id="post-review-box" style="display:none;">
+                <div class="col-md-12">
+                    <form accept-charset="UTF-8" action="" method="post">
+                        <input id="ratings-hidden" name="rating" type="hidden"> 
+                        <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+        
+                        <div class="text-right">
+                            <div class="stars starrr" data-rating="0"></div>
+                            <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                            <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+                            <button class="btn btn-success btn-lg" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+         
+		</div>
+	</div>
+</div>
+    <br>
+    <br>
+        <footer style="text-align: left;">
+		<address>
+			Author:<br>
+			<b><a href="mailto:BansodePallavi2412@gmail.com">Pallavi Bansode</a></b><br>
+			Walchand College of Engineering,<br>
+			Sangli, Maharashtra, India.
+        </address>
+    </footer>
+    <br>
+    <br>
+</body>
+</html>
